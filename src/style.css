@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:medium;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles*/
+#headerContainer > h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color:rgb(245, 220, 97)
+}
+#headerContainer > small {
+    font-size: medium;
+    font-weight: lighter;
+    color: #f0af16;
+}
+#headerContainer {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+   box-shadow: 5px 3px 10px rgba(8, 8, 8, 0.7);
+   text-align: center;
+   background-color: rgb(20, 100, 61);
+}
+
+#formContainer {
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+   box-shadow: 5px 3px 10px rgba(8, 8, 8, 0.7);
+   text-align: left;
+   background-color: rgb(55, 123, 90);
+}
+
+#formContainer > #studentForm > .input-field{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 5px 3px 10px rgba(8, 8, 8, 0.7);
+    border-radius: 5px;
+}
+
+#formContainer > #studentForm > .input-field > label {
+    font-size: large;
+    font-weight: bold;
+    color:rgb(245, 220, 97);
+    margin-bottom: 5px;
+} 
+
+
+#formContainer > #studentForm > .input-field > input {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(8, 8, 8, 0.7);
+    
+}
+
+#formContainer > #studentForm :nth-last-child(1) > button{
+    padding: 5px;
+    margin: 5px 0;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(245, 220, 97);
+    box-shadow: 5px 3px 10px rgba(8, 8, 8, 0.7);
+}
+
+#formContainer > #studentForm :nth-last-child(1) > button:hover{
+    background-color: rgb(224, 196, 67);
+}
+
+#listContainer > .list-item{
+    box-shadow: 5px 3px 10px rgba(8, 8, 8, 0.7);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(55, 123, 90);
+}
+
+#listContainer > .list-item > h2{
+    font-size: large;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+
+#listContainer > .list-item > p{
+    font-size: medium;
+    font-weight: normal;
+    color:rgb(0, 0, 0);
+}
+
+#listContainer > .list-item > button{
+    padding: 5px;
+    margin: 5px 0;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(222, 92, 68);
+
+}
+
+#listContainer > .list-item > button:hover{
+    background-color: rgb(196, 81, 60);
+    
+}
+#listContainer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (width <= 320px) {
+    #listContainer > .list-item{
+        grid-column: span 12;
+    }
+}
+
+@media (width > 1000px){
+    #lisContainer > .list-item{
+        grid-column: span 2;
+    }
+}
+
+@media (width >320px) and (width < 1000px) {
+    #listContainer > .list-item{
+        grid-column: span 4;
+    }
+}
